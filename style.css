@@ -1,6 +1,16 @@
 :root {
-  font-size: 14pt;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 12pt;
+  /* Colors */
+  --body-bg-color: #F8F8F8; /* A very light gray, almost white */
+  --main-content-bg-color: #FFFFFF; /* Pure white for content boxes */
+  --border-color: #DDDDDD; /* A subtle light gray for borders */
+  --text-color: #333333; /* A dark gray for body text, softer than pure black */
+  --heading-font: "Georgia", serif;
+  --body-font: "Roboto", sans-serif;
+}
+
+h1,h2,h3 {
+  font-family: var(--heading-font);
 }
 
 * {
@@ -8,8 +18,9 @@
 }
 
 body {
-  background-color: lightblue;
+  background-color: var(--body-bg-color);
   padding: 1rem;
+  font-family: var(--body-font);
 }
 
 .bio-header {
@@ -24,7 +35,6 @@ body {
   border: black solid 2px;
   padding: 1.5rem;
   grid-gap: 20px;
-  background-color: aliceblue;
   font-size: 2.5rem;
 }
 
@@ -57,9 +67,9 @@ body {
 .bio-section {
   min-height: 100px;
   width: 100%;
-  background-color: aliceblue;
-  border: black 2px solid;
-  margin-top: 3rem;
+  background-color: var(--main-content-bg-color);
+  border: var(--border-color) 2px solid;
+  margin-top: 1.5rem;
   padding: 1.5rem;
 }
 
@@ -69,7 +79,7 @@ body {
   background-color: hsl(0, 0%, 100%);
   border-top-width: 3px;
   border-width: 3px 0px 3px 0px;
-  border-color: black;
+  border-color: var(--border-color);
   border-style: solid;
 }
 
