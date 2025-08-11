@@ -46,3 +46,11 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
+.bio-section {
+  min-height: 100px;
+  width: 100%;
+  background-color: aliceblue;
+  border: black 2px solid ;
+  margin-top: 3rem;
+}
